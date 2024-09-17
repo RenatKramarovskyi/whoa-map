@@ -1,0 +1,69 @@
+.overlay{
+    background-color: rgba(134, 129, 129, 0.2);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+}
+.modal{
+    background-color: white;
+    outline: 2px solid gray;
+    border-radius: 12px;
+    width: 500px;
+    height: 500px;
+    box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.modalHeader{
+    height: 10%;
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    color: white;
+    font-weight: 900;
+    font-family: monospace;
+    font-size: 25px;
+}
+.closeButton{
+    cursor: pointer;
+    transition: hover, target 0.2s ;
+    user-select: none;
+    padding: 10px;
+}
+.closeButton:hover{
+    color: grey;
+}
+.closeButton:active{
+    transform: scale(-0.50);
+}
+.disable{
+    display: none;
+}
+
+.contentBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    overflow: auto;
+    scrollbar-width: none;
+    padding: 1rem;
+    > div {
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+    }
+}
+
+.contentBlock img{
+    max-width: 300px;
+}
